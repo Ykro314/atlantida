@@ -16,6 +16,7 @@ var cleanCss = require( "gulp-clean-css" );
 var uglify = require( "gulp-uglify" );
 var concat = require( "gulp-concat" );
 
+var spriteSmith = require( "gulp.spritesmith" );
 
 
 /**
@@ -149,6 +150,18 @@ gulp.task( "zip:prod", function(){
     .pipe( zip( "prod " + getDate() + ".zip" ) )
     .pipe( gulp.dest( "prod" ) );
 })
+
+
+gulp.task( "sprites", function(){
+  return gulp.src( "graph/img/sprite-asserts/*.png" )
+    .pipe( spriteSmith({
+      imgName: "sprites.png",
+      cssName: "sprites.css", // i can set .less instead of .css might be useful
+      padding: 10,
+      algorithm: "left-right"
+    }) )
+    .pipe( gulp.dest( "graph/img/sprites/" ) );
+});
 
 
 

@@ -1,0 +1,63 @@
+.about-us {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background: #e3e3e3;
+  &__wrapper {
+    margin-bottom: 35px;
+    padding: 60px 70px 50px 70px;
+    text-align: center;
+    background: white;
+  }
+  a {
+    margin-left: 3px;
+  }
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 270px;
+    padding: 65px 0;
+    font-family: @ff-Montserrat;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #3e3d3d;
+    letter-spacing: 1px;
+    text-align: center;
+    &:not(:last-child) {
+      border-right: 1px solid #b0b0b0;
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+      font-size: 45px;
+      line-height: 45px;
+      color: #3e3d3d;
+    }
+    &--awwards:after {
+      content: "54";
+    }
+    &--jobs:after {
+      content: "1054";
+    }
+    &--clients:after {
+      content: "120";
+    }
+    &--reviews:after {
+      content: "67";
+    }
+  }
+}

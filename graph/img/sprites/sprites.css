@@ -1,0 +1,138 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-footer-logo:before {
+  background-image: url(sprites.png);
+  background-position: -643px 0px;
+  width: 41px;
+  height: 29px;
+}
+.icon-header-logo:before {
+  background-image: url(sprites.png);
+  background-position: -541px 0px;
+  width: 41px;
+  height: 29px;
+}
+.icon-header-social-be {
+  background-image: url(sprites.png);
+  background-position: -84px 0px;
+  width: 16px;
+  height: 10px;
+}
+.icon-header-social-fb {
+  background-image: url(sprites.png);
+  background-position: 0px 0px;
+  width: 11px;
+  height: 10px;
+}
+.icon-header-social-tw {
+  background-image: url(sprites.png);
+  background-position: -21px 0px;
+  width: 11px;
+  height: 9px;
+}
+.icon-main-icon-awwards:before {
+  background-image: url(sprites.png);
+  background-position: -442px 0px;
+  width: 38px;
+  height: 41px;
+}
+.icon-main-icon-clients:before {
+  background-image: url(sprites.png);
+  background-position: -399px 0px;
+  width: 33px;
+  height: 39px;
+}
+.icon-main-icon-design {
+  background-image: url(sprites.png);
+  background-position: -362px 0px;
+  width: 27px;
+  height: 21px;
+}
+.icon-main-icon-idea {
+  background-image: url(sprites.png);
+  background-position: -289px 0px;
+  width: 26px;
+  height: 25px;
+}
+.icon-main-icon-jobs:before {
+  background-image: url(sprites.png);
+  background-position: -592px 0px;
+  width: 41px;
+  height: 40px;
+}
+.icon-main-icon-offer-adv {
+  background-image: url(sprites.png);
+  background-position: -223px 0px;
+  width: 22px;
+  height: 18px;
+}
+.icon-main-icon-offer-basic {
+  background-image: url(sprites.png);
+  background-position: -136px 0px;
+  width: 16px;
+  height: 20px;
+}
+.icon-main-icon-offer-pro {
+  background-image: url(sprites.png);
+  background-position: -162px 0px;
+  width: 20px;
+  height: 21px;
+}
+.icon-main-icon-reviews:before {
+  background-image: url(sprites.png);
+  background-position: -490px 0px;
+  width: 41px;
+  height: 37px;
+}
+.icon-main-icon-seo {
+  background-image: url(sprites.png);
+  background-position: -255px 0px;
+  width: 24px;
+  height: 22px;
+}
+.icon-main-icon-social-be {
+  background-image: url(sprites.png);
+  background-position: -110px 0px;
+  width: 16px;
+  height: 10px;
+}
+.icon-main-icon-social-fb {
+  background-image: url(sprites.png);
+  background-position: -63px 0px;
+  width: 11px;
+  height: 10px;
+}
+.icon-main-icon-social-tw {
+  background-image: url(sprites.png);
+  background-position: -42px 0px;
+  width: 11px;
+  height: 9px;
+}
+.icon-main-icon-wp {
+  background-image: url(sprites.png);
+  background-position: -192px 0px;
+  width: 21px;
+  height: 21px;
+}
+.icon-main-slider-quote {
+  background-image: url(sprites.png);
+  background-position: -325px 0px;
+  width: 27px;
+  height: 21px;
+}
