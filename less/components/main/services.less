@@ -1,0 +1,47 @@
+.services {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: #292830;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../graph/pict/main-services-bg.jpg");
+  background-size: cover;
+  color: #cfcfcf;
+  .section-header__title:before {
+    background-image: url("../graph/pict/curved-line-white.png");
+  }
+  .section-header__descr {
+    margin-bottom: 70px;
+    color: #cfcfcf;
+    text-align: center;
+  }
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+    width: 22.5%;
+    padding: 75px 35px 40px 35px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #898989;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 30px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      transform: translateX( -50% );
+    }
+  }
+  &__item-title {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+}

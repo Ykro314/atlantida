@@ -1,0 +1,39 @@
+.portfolio {
+  padding-top: 70px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+  &__item {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+.projects {
+  width: 100%;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  &__item {
+    width: 25%;
+    background: green;
+    box-sizing: border-box;
+    &--small {
+      height: 30%;
+    }
+    &--medium {
+      height: 50%;
+    }
+    &--large {
+      height: 70%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
