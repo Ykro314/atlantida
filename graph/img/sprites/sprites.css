@@ -16,7 +16,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-footer-logo {
+.icon-footer-logo:before {
   background-image: url(sprites.png);
   background-position: -643px 0px;
   width: 41px;

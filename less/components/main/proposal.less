@@ -1,0 +1,42 @@
+.proposal {
+  padding: 50px 0;
+  background: @bg-proposal;
+  color: #d8d8d8;
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__wrapper {
+    display: flex;
+    padding-right: 130px;
+  }
+  &__logo {
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../graph/pict/main-proposal-img.png");
+  }
+  &__content {
+    flex-shrink: 1;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  &__text {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: @ff-Crimson;
+    color: #888888;
+    letter-spacing: normal;
+  }
+  &__purchase-btn {
+    flex-shrink: 0;
+  }
+}
