@@ -114,6 +114,16 @@
     padding-bottom: 30px;
     border: 2px solid @bc-history-message;
     color: @fc-color-dark-grey;
+    transition: all 0.4s;
+    cursor: pointer;
+    &:hover {
+      background: @fc-color-dark-grey;
+      color: #e4e4e4;
+      .time-point__icon:before,
+      .time-point__icon:after {
+        border-top-color: @fc-color-dark-grey;
+      }
+    }
   }
   &__icon {
     display: block;
@@ -131,6 +141,7 @@
       width: 0;
       height: 0;
       background: transparent;
+      transition: all 0.4s;
     }
     &:before {
       top: 0;

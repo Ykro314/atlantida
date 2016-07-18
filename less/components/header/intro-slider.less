@@ -1,0 +1,67 @@
+.intro-slider {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 45px;
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    &:before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: transparent;
+      border: 2px solid #829390;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      position: absolute;
+      top: ~"calc(50% - 3px)";
+      left: ~"calc(50% - 3px)";
+    }
+  }
+  .owl-prev {
+    left: 5px;
+    &:before {
+      transform: translateY(-1px) rotate(-45deg);
+    }
+    &:active {
+      transform: scale(0.75);
+    }
+  }
+  .owl-next {
+    right: 0;
+    transform: rotate(135deg);
+    &:active {
+      transform: rotate(135deg) scale(0.85);
+    }
+  }
+}
+
+.intro-slide {
+  text-align: center;
+  color: white;
+  &__title {
+    display: block;
+    margin-bottom: 30px;
+    font-family: @ff-Crimson;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  &__phrase {
+    font-size: 36px;
+    font-family: @ff-Amsdam;
+    padding: 30px 0;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../graph/pict/header-slider-curved-line.png");
+  }
+}
+

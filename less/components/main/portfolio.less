@@ -21,18 +21,62 @@
   &__item {
     width: 25%;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      .projects-overlay {
+        transition: all 0.4s ease-out;
+        transform: translate( 0, 0 );
+      }
+    }
     &--small {
       height: 30%;
+      .projects-overlay {
+        transform: translate( -100%, 0);
+      }
     }
     &--medium {
       height: 50%;
+      .projects-overlay {
+        transform: translate( 100%, 0);
+      }
     }
     &--large {
       height: 70%;
+      .projects-overlay {
+        transform: translate( 0, -100%);
+      }
     }
     img {
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: rgba( 255, 255, 255, 0.4);
+  transition: all 0.4s ease-in;
+  &__category {
+    font-family: @ff-Crimson;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
   }
 }

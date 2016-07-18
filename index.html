@@ -6,11 +6,14 @@
     <title>Atlantida</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="graph/img/sprites/sprites.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
-    
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/libs/jump.min.js"></script>
   </head>
   
   
@@ -26,31 +29,31 @@
       
       <ul class="main-menu">
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">Home</a>
+          <a href="#" class="main-menu__anchor"  data-jump="">Home</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">About</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".about-us">About</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">Services</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".services">Services</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">History</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".history">History</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">Team</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".team">Team</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">Portfolio</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".portfolio">Portfolio</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">Prices</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".prices">Prices</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">Blog</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".blog">Blog</a>
         </li>
         <li class="main-menu__list-item">
-          <a href="#" class="main-menu__anchor">Contact</a>
+          <a href="#" class="main-menu__anchor"  data-jump=".contact">Contact</a>
         </li>
       </ul>
       
@@ -68,8 +71,27 @@
 
     </nav>
 
-    <section class="header-slider">
+    <section class="banner">
       <div class="inner">
+
+        <ul class="intro-slider  owl-carousel">
+          <li class="intro-slide"><span class="intro-slide__title">Design Studio and Digital Agency</span>
+            <p class="intro-slide__phrase">We are Atlantida</p>
+          </li>
+
+          <li class="intro-slide"><span class="intro-slide__title">Dignissimos eaque non, optio repudiandae sequi totam voluptas voluptatibus. Blanditiis.</span>
+            <p class="intro-slide__phrase">We creare awesome things</p>
+          </li>
+
+          <li class="intro-slide"><span class="intro-slide__title">At deleniti dolorum ducimus fugiat harum, obcaecati omnis quam voluptatum!</span>
+            <p class="intro-slide__phrase">We improve everything</p>
+          </li>
+        </ul>
+
+        <a href="#" class="btn-standart--banner  btn-standart"  data-jump=".about-us">
+          Get started
+          <i class="banner__btn-arrow"></i>
+        </a>
 
       </div>
     </section>
@@ -93,7 +115,7 @@
           </div>
 
             <a href="#" class="about-us__contact  btn-standart">Contact Us</a>
-            <a href="#" class="about-us__portfolio  btn-standart">Portfolio</a>
+            <a href="#" class="about-us__portfolio  btn-standart"  data-jump=".portfolio">Portfolio</a>
         </div>
 
         <ul class="features-list">
@@ -328,27 +350,59 @@
       <ul class="projects">
         <li class="projects__item  projects__item--large">
           <img src="./graph/pict/main-portfolio-1.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Web development</span>
+            <h4 class="projects-overlay__title">Lorem ipsum dolor</h4>
+          </div>
         </li>
         <li class="projects__item  projects__item--small">
           <img src="./graph/pict/main-portfolio-2.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Logos</span>
+            <h4 class="projects-overlay__title">Aliquam aliquid deleniti</h4>
+          </div>
         </li>
         <li class="projects__item  projects__item--medium">
           <img src="./graph/pict/main-portfolio-3.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Web development</span>
+            <h4 class="projects-overlay__title">Harum in iusto laborum.</h4>
+          </div>
         </li>
         <li class="projects__item  projects__item--medium">
           <img src="./graph/pict/main-portfolio-4.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Creative brochures</span>
+            <h4 class="projects-overlay__title">Consectetur adipisicing elit</h4>
+          </div>
         </li>
         <li class="projects__item  projects__item--small">
           <img src="./graph/pict/main-portfolio-5.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Web development</span>
+            <h4 class="projects-overlay__title">Adipisci, cumque</h4>
+          </div>
         </li>
         <li class="projects__item  projects__item--large">
           <img src="./graph/pict/main-portfolio-6.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Web development</span>
+            <h4 class="projects-overlay__title">Lorem ipsum dolor.</h4>
+          </div>
         </li>
         <li class="projects__item  projects__item--large">
           <img src="./graph/pict/main-portfolio-7.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Logos</span>
+            <h4 class="projects-overlay__title">Ab aperiam consectetur</h4>
+          </div>
         </li>
         <li class="projects__item  projects__item--small">
           <img src="./graph/pict/main-portfolio-8.jpg" alt="portfolio thumbnail"/>
+          <div class="projects-overlay">
+            <span class="projects-overlay__category">Creative brochures</span>
+            <h4 class="projects-overlay__title">Minus modi molestias.</h4>
+          </div>
         </li>
       </ul>
     </section>
@@ -516,15 +570,35 @@
     </section>
 
 
-    <section class="carousel">
+    <section class="testimonials">
       <div class="inner">
+        <ul class="testimonials-slider  owl-carousel">
+          <li class="testimonials-slide">
+            <figure class="testimonials-slide__photo"></figure>
+            <p class="testimonials-slide__phrase"><i class="quote"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores distinctio iure, molestias nesciunt obcaecati officia quidem vero voluptatibus. Eum.<i class="quote"></i></p>
+            <span class="testimonials-slide__name">Alexander Polyarny</span>
+            <span class="testimonials-slide__company">Some huge company.com</span>
+          </li>
 
+          <li class="testimonials-slide">
+            <figure class="testimonials-slide__photo"></figure>
+            <p class="testimonials-slide__phrase">Ab consectetur consequatur cum expedita iusto, natus possimus recusandae. Doloribus, iste, repellendus!</p>
+            <span class="testimonials-slide__name">Paul Samson</span>
+            <span class="testimonials-slide__company">Some huge company.com</span>
+          </li>
 
+          <li class="testimonials-slide">
+            <figure class="testimonials-slide__photo"></figure>
+            <p class="testimonials-slide__phrase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque dolor dolore, doloremque dolores magni natus non sed temporibus totam.</p>
+            <span class="testimonials-slide__name">Andjei Gregorocich</span>
+            <span class="testimonials-slide__company">Some huge company.com</span>
+          </li>
+        </ul>
       </div>
     </section>
 
 
-    <section class="map">
+    <section class="map" id="map">
 
     </section>
 
@@ -578,8 +652,13 @@
     </div>
   </footer>
 
-
-  <script src="js/scripts.js"></script> 
+  <!--<script src="js/libs/jquery.min.js"></script>-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLHW0SjN1YlTj0duNFdLMMx40SiclQgbs&callback=initMap" async defer>
+  </script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/scrollAnchor.js"></script>
+  <script src="js/scripts.js"></script>
   </body>
   
 </html>
