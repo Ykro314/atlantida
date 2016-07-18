@@ -1,9 +1,9 @@
 .banner {
   width: 100%;
-  height: ~"calc(100vh - 50px)";
+  height: 400px;
+  background-color: @fc-color-dark-grey;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../graph/pict/header-slider-bg.jpg");
   background-size: cover;
   .inner {
     height: 100%;
@@ -11,7 +11,36 @@
     flex-direction: column;
     justify-content: center;
   }
+  &__page-name {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: @ff-Amsdam;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: ~"calc(50% - 160px)";
+      content: "";
+      width: 320px;
+      height: 10px;
+      background: url( "../graph/pict/header-slider-curved-line.png" ) no-repeat 0 0;
+    }
+  }
   .btn-standart--banner {
     align-self: center;
   }
+}
+
+.banner--blog {
+  height: 340px;
+  text-align: center;
+  background-image: url("../graph/pict/header-blog-banner-bg.jpg");
+  color: white;
+}
+
+.banner--main-page {
+  height: ~"calc(100vh - 50px)";
+  background-image: url("../graph/pict/header-slider-bg.jpg");
 }
